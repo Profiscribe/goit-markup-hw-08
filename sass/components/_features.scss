@@ -1,14 +1,32 @@
-.features {
-    padding-top: 94px;
-}
+
 
 .features__container {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 15px;
     padding-right: 15px;
-    display: block;
-    width: 1200px;
+    
+    
+    @media screen and (min-width:480px) {
+        width: 480;
+        padding-top: 60px;
+          
+    }
+    @media screen and (min-width:768px) {
+       width:768px;
+
+    }
+     
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+        padding-top: 94px;
+        
+            
+            
+            
+    }
+
+
 }
 
 .features__title {
@@ -16,12 +34,44 @@
 }
 
 .description {
+
+    @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+    
+    
+        }
+    
+    @media screen and (min-width:1200px) {
     display: flex;
-    gap: 30px;
+        gap: 30px;
+        
+    
+    }
+
+
+
 }
 
 .description__item {
-    width: 270px;
+
+
+
+    @media screen and (min-width:768px) {
+        width: 50%;
+       
+    
+    
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 270px;
+    
+    
+    }
+    
+
+
 }
 
 .box {
@@ -34,7 +84,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width:480px) {
+        padding-top: 10px;
+        width: 450px;
+        height: 120px;
+            
+    }
+
+    @media screen and (min-width:768px) {
+        padding-top: 60px;
+        width: 354px;
+        height: 120px;
+    
+    }
+
+        @media screen and (min-width:1200px) {
+            padding-top: 4px;
+            width: 270px;
+            height: 120px;
+            
+
+            
+        }
+
+               
 }
+
+
+
 
 .description__sub-title {
     color: var(--title-text-color);
@@ -46,6 +124,22 @@
 
     margin-bottom: 10px;
     margin-top: 0px;
+    
+
+    @media screen and (min-width:480px) {
+
+        width: 450px;
+        text-align: center;
+    }
+
+    @media screen and (min-width:1200px) {
+
+      width: 270px;
+      
+    }
+
+        
+    
 }
 
 .description__text {
@@ -57,4 +151,25 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
+
+    @media screen and (min-width:768px) {
+    
+        width: 354px;
+        
+    
+    }
+
+    @media screen and (min-width:1200px) {
+    
+        width: 270px;
+        
+    
+    }
+ 
+       
+
+
+
+
 }
